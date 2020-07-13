@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    filter: drop-shadow(0 -4vmin 10px rgba(black, .2));
+    border: none;
+    // border-top: 2px solid #0a2a3a;
+  }
+  
+  .input {
+    border: none;
+    border-radius: 0;
+    padding: 5%;
+    background: lighten($color: #1a2a3a, $amount: 10%);
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+  
+  .sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: lighten($color: #1a2a3a, $amount: 10%);
+    display: inline-block;
+    border: none;
+    width: 20%;
+    margin: 0;
+  }

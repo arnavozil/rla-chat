@@ -1,0 +1,73 @@
+[data-component='ChatInput'] {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	width: calc(100% - 40px);
+	height 40px;
+	margin: 10px 20px;
+	box-sizing: border-box;
+	font-family: 'Acme', sans-serif;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	bottom: 0;
+	border: none;
+	color: #111;
+	background-color: rgba(yellow, .4);
+	border-radius: 5px;
+
+	> .file{
+		height: 100%;
+		flex: .75;
+		position relative;
+		> .upload{
+			position: absolute;
+			width: 70%;
+			margin: auto;
+			text-align: center;
+			height 70%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			color: darken($COLOR_BG_1, 70%);
+		}
+		> .browse{
+			cursor pointer
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+		}
+	}
+
+	> textarea {
+		height: 100%;
+		width: 100%;
+		padding: 6px 8px;
+		resize: none;
+		outline: none;
+		background-color: inherit;
+		color: #111;
+		flex: 4;
+		font-family: inherit;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25px;
+		font-size: 16px;
+		border: none;
+
+		+placeholder() {
+			color: black; 
+		}
+
+		&:disabled {
+			opacity: 0.65;
+		}
+	}
+
+	> .chat-box-button {
+		text-align: center;
+		flex: 1;
+		cursor pointer
+	}
+}

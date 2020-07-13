@@ -1,0 +1,40 @@
+.main {
+	padding: 2rem 1rem;
+}
+
+.main_id {
+	background-color: #ff1a2e;
+	color: white;
+	font-size: 2rem;
+	padding: 1rem;
+	font-family: 'Lobster', cursive;
+}
+
+.main_create {
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 1rem;
+}
+
+.main_create_child {
+	width: 90%;
+	padding: 1rem .5rem;
+	font-size: 1.6rem;
+	border: .1rem solid #aaa;
+	border-radius: .25rem;
+	background-color: #ffffe5;
+	font-family: 'Red Hat Text', sans-serif;
+	margin-bottom: 1rem;
+}
+
+.main_create_child::placeholder {
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+.main_create_child:nth-child(4) {
+	width: 20%;
+	border-radius: 0;
+	border: .15rem solid #aaa;
+	margin: auto;
+	background-color: #fff0f1;
+}
