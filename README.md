@@ -1,1 +1,1 @@
-# RLA COLLEGE CHAT
+# Video Conferencing / Chatting
